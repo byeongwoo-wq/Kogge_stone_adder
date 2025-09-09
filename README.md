@@ -9,6 +9,7 @@ Kogge-Stone Adder는 병렬 prefix 계산을 통해 carry를 빠르게 계산하
 P𝑖는 Carry를 전달할 수 있는가를 나타내고 𝐺𝑖는 Carry를 생성하는가를 의미한다. 
 
 ##Level 2(P2, G2)
+
 <img width="304" height="60" alt="image" src="https://github.com/user-attachments/assets/4b1eee1f-10b2-4cc8-81b9-f90e775813d1" />
 
 이때 이론적인 Prefix 계산규칙으로는 𝑃2[𝑛]값은 𝑛≥1 범위부터 계산이 가능하다. 
@@ -19,6 +20,7 @@ G2[0] = BITOR(G[0],(P[0] ⋅ Cin))으로 계산한다.
 
 
 ##Level 3(P3, G3) 
+
 <img width="300" height="61" alt="image" src="https://github.com/user-attachments/assets/b0fe5e9b-0966-4e1b-8b1a-5d58e0845b6a" />
 
 이때 이론적인 Prefix 계산규칙으로는 𝑃3[𝑛]값은 𝑛≥ 2 범위부터 계산이 가능하다. 
@@ -31,6 +33,7 @@ G3[0] 은 계산이 불가능 하기에 해당 위치의 이전 레벨 값인 �
 G3[1]값은 𝐺3[1] = 𝐵𝐼𝑇𝑂𝑅(𝐺3[1],(𝑃3[1]⋅𝐶𝑖𝑛))식을 사용하여 구한다. 
 
 ##Level 4(P4, G4) 
+
 <img width="284" height="57" alt="image" src="https://github.com/user-attachments/assets/3347c084-c037-4be0-ade4-62d7651c0d76" />
 
 이때 이론적인 Prefix 계산규칙으로는 𝑃4[𝑛]값은 𝑛≥ 4 범위부터 계산이 가능하다. 
@@ -47,6 +50,7 @@ G4[2]은 계산이 불가능 하기에 해당 위치의 이전 레벨 값인 �
 G4[3]값은 𝐺4[3] = 𝐵𝐼𝑇𝑂𝑅(𝐺4[3],(𝑃4[3]⋅𝐶𝑖𝑛))식을 사용하여 구한다.
 
 ##Level 5(P5, G5) 
+
 <img width="313" height="63" alt="image" src="https://github.com/user-attachments/assets/89355e34-8ef4-452b-b386-8ea03db5765d" />
 
 이때 이론적인 Prefix 계산규칙으로는 𝑃5[𝑛]값은 𝑛≥ 8 범위부터 계산이 가능하다. 
@@ -71,6 +75,7 @@ G5[6]은 계산이 불가능 하기에 해당 위치의 이전 레벨 값인 �
 G5[7]값은 𝐺5[7] = 𝐵𝐼𝑇𝑂𝑅(𝐺5[7],(𝑃5[7]⋅𝐶𝑖𝑛))식을 사용하여 구한다.
 
 ##Level 6(P6, G6) 
+
 <img width="304" height="59" alt="image" src="https://github.com/user-attachments/assets/9d532b10-8256-4cc8-aa03-2d441817badd" />
 
 이때 이론적인 Prefix 계산규칙으로는 𝑃6[𝑛]값은 𝑛≥ 16 범위부터 계산이 가능하다. 
@@ -110,6 +115,7 @@ G6[14]은 계산이 불가능 하기에 해당 위치의 이전 레벨 값인 �
 G6[15]값은 𝐺6[15] = 𝐵𝐼𝑇𝑂𝑅(𝐺6[15],(𝑃6[15]⋅𝐶𝑖𝑛))식을 사용하여 구한다. 
 
 ##Level 7(P7, G7) 
+
 <img width="303" height="55" alt="image" src="https://github.com/user-attachments/assets/ef6f3c4b-2768-41b6-831c-f4b9f61d1bfc" />
 
 이때 이론적인 Prefix 계산규칙으로는 𝑃7[𝑛]값은 𝑛≥ 32 범위부터 계산이 가능하다. 
